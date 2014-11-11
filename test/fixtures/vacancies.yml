@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  expiration_date: 2014-11-11
+  salary: 9.99
+  contacts: MyText
+
+two:
+  name: MyString
+  expiration_date: 2014-11-11
+  salary: 9.99
+  contacts: MyText
