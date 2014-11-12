@@ -23,3 +23,5 @@ ru:
   layouts:
     application:
       employment_agency: Кадровое Агенство
+      vacancies: "Вакансии"
+      cvs: "Резюме"
