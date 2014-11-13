@@ -5,8 +5,8 @@
       %th= t('.contacts')
       %th= t('.status')
       %th= t('.salary')
-  %tr
-    -@cvs.each do |cv|
+  -@cvs.each do |cv|
+    %tr
       %td= cv.full_name
       %td= cv.contacts
       %td= cv.status
