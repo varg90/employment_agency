@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'vacancy/index'
+
+  get 'vacancy/show'
+
+  get 'vacancy/suitable_for_cv'
+
+  get '/cvs', to: 'cv#index', as: :cvs
+
+  get 'cv/show'
+
+  get 'cv/suitable_for_vacancy'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root to: 'admin/dashboard#index'

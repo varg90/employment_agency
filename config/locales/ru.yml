@@ -25,3 +25,9 @@ ru:
       employment_agency: Кадровое Агенство
       vacancies: "Вакансии"
       cvs: "Резюме"
+  cv:
+    index:
+      full_name: "ФИО"
+      contacts: "Контактные данные"
+      status: "Статус поиска работы"
+      salary: "Желаемая зарплата"

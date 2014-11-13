@@ -1,0 +1,14 @@
+%table.table.table-striped
+  %thead
+    %tr
+      %th= t('.full_name')
+      %th= t('.contacts')
+      %th= t('.status')
+      %th= t('.salary')
+  %tr
+    -@cvs.each do |cv|
+      %td= cv.full_name
+      %td= cv.contacts
+      %td= cv.status
+      %td= number_to_currency(cv.salary, locale: :ru)
+= paginate @cvs
