@@ -3,7 +3,7 @@ class CreateCvs < ActiveRecord::Migration
     create_table :cvs do |t|
       t.string :full_name
       t.string :contacts
-      t.string :status
+      t.boolean :status, default: false
       t.decimal :salary
 
       t.timestamps

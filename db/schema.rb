@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 20141113025042) do
   create_table "cvs", force: true do |t|
     t.string   "full_name"
     t.string   "contacts"
-    t.string   "status"
+    t.boolean  "status",     default: false
     t.decimal  "salary"
     t.datetime "created_at"
     t.datetime "updated_at"

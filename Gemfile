@@ -43,3 +43,4 @@ gem 'twitter-bootstrap-rails', git: 'git://github.com/seyhunak/twitter-bootstrap
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'kaminari-bootstrap', '~> 3.0.1'
+gem 'faker'
