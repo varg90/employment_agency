@@ -11,8 +11,8 @@ Rails.application.routes.draw do
 
   get 'cv/suitable_for_vacancy'
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
+  get 'cv/new', to: 'cv#new', as: :new_cv
+
   root to: 'admin/dashboard#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
