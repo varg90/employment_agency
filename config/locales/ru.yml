@@ -38,3 +38,7 @@ ru:
       previous: "&lsaquo; Предыдущая"
       next: "Следующая &rsaquo;"
       truncate: ". . ."
+  main:
+    index:
+      add_cv: "Добавить резюме"
+      add_vacancy: "Добавить вакансию"

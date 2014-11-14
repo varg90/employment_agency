@@ -6,12 +6,14 @@ Rails.application.routes.draw do
   get 'vacancy/suitable_for_cv'
 
   get '/cvs', to: 'cv#index', as: :cvs
+  get '/vacancies', to: 'vacancy#index', as: :vacancies
 
   get 'cv/show'
 
   get 'cv/suitable_for_vacancy'
 
   get 'cv/new', to: 'cv#new', as: :new_cv
+  get 'vacancy/new', to: 'vacancy#new', as: :new_vacancy
 
   root to: 'main#index'
 

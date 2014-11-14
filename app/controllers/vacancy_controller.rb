@@ -1,4 +1,8 @@
 class VacancyController < ApplicationController
+  def new
+    @vacancy = Vacancy.new
+  end
+
   def index
     @cvs = Vacancy.all.page params[:page]
   end
