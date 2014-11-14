@@ -81,6 +81,8 @@ test:
 #
 production:
   <<: *default
-  database: employment_agency_production
-  username: employment_agency
-  password: <%= ENV['EMPLOYMENT_AGENCY_DATABASE_PASSWORD'] %>
+  host: ENV['DB_HOST']
+  database: ENV['DB_NAME']
+  username: ENV['DB_USER']
+  password: ENV['DB_PASSWORD']
+  port: ENV['DB_PORT']
