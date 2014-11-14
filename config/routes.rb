@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get 'cv/new', to: 'cv#new', as: :new_cv
 
-  root to: 'admin/dashboard#index'
+  root to: 'main#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
