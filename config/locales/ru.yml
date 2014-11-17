@@ -25,6 +25,7 @@ ru:
       employment_agency: Кадровое Агенство
       vacancies: "Вакансии"
       cvs: "Резюме"
+      footer_text: "&copy; Kun Aleksey 2014"
   cv:
     index:
       full_name: "ФИО"
@@ -42,3 +43,4 @@ ru:
     index:
       add_cv: "Добавить резюме"
       add_vacancy: "Добавить вакансию"
+  save: "Сохранить"
