@@ -11,6 +11,6 @@ class CvController < ApplicationController
     @cv = Cv.find params[:id]
   end
 
-  def suitable_for_vacancy
+  def suitable_for_vacancy id
   end
 end

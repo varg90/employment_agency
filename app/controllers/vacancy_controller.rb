@@ -3,6 +3,10 @@ class VacancyController < ApplicationController
     @vacancy = Vacancy.new
   end
 
+  def create
+    @vacancy = Vacancy.new vacancy_params
+  end
+
   def index
     @cvs = Vacancy.all.page params[:page]
   end
@@ -11,6 +15,11 @@ class VacancyController < ApplicationController
     @cv = Vacancy.find params[:id]
   end
 
-  def suitable_for_cv
+  def suitable_for_cv id
+  end
+
+  private
+  def vacancy_params
+    params.require(:vacancy).permit :name, :expiration_date, :salary, :contacts
   end
 end
